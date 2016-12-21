@@ -735,6 +735,10 @@ public class WifiSettings extends RestrictedSettingsFragment
     }
 
     private void setOffMessage() {
+        if(!isAdded()){
+            return;
+        }
+
         if (isUiRestricted()) {
             if (!isUiRestrictedByOnlyAdmin()) {
                 addMessagePreference(R.string.wifi_empty_list_user_restricted);
