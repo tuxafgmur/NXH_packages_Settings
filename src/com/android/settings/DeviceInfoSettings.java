@@ -54,7 +54,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
     private static final String LOG_TAG = "DeviceInfoSettings";
 
-    private static final String KEY_MANUAL = "manual";
     private static final String KEY_REGULATORY_INFO = "regulatory_info";
     private static final String PROPERTY_SELINUX_STATUS = "ro.build.selinux";
     private static final String KEY_KERNEL_VERSION = "kernel_version";
@@ -67,7 +66,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_SECURITY_PATCH = "security_patch";
     private static final String KEY_EQUIPMENT_ID = "fcc_equipment_id";
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
-    private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_MBN_VERSION = "mbn_version";
     private static final String PROPERTY_MBN_VERSION = "persist.mbn.version";
     private static final String KEY_QGP_VERSION = "qgp_version";
@@ -124,10 +122,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL);
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
-        //setValueSummary(KEY_QGP_VERSION, PROPERTY_QGP_VERSION);
-        // Remove QGP Version if property is not present
-        //removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_QGP_VERSION,
-        //        PROPERTY_QGP_VERSION);
         String mQGPVersion = getQGPVersionValue();
         setStringSummary(KEY_QGP_VERSION, mQGPVersion);
         if(mQGPVersion == null){
@@ -147,11 +141,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_XENONHD_VERSION).setEnabled(true);
         setValueSummary(KEY_XENONHD_MAINTAINER, "ro.xenonhd.maintainer");
         findPreference(KEY_XENONHD_MAINTAINER).setEnabled(true);
-
-        String buildtype = SystemProperties.get("ro.xenonhd.version","Unofficial");
-            if (buildtype.equalsIgnoreCase("Unofficial")) {
-                removePreference(KEY_XENONHD_MAINTAINER);
-        }
 
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
 
@@ -179,17 +168,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             getPreferenceScreen().removePreference(findPreference(KEY_BASEBAND_VERSION));
         }
 
-        // Dont show feedback option if there is no reporter.
-        if (TextUtils.isEmpty(DeviceInfoUtils.getFeedbackReporterPackage(getActivity()))) {
-            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_FEEDBACK));
-        }
-
         /*
-         * Settings is a generic app and should not contain any device-specific
-         * info.
+         * Settings is a generic app and should not contain any device-specific info.
          */
-        // Remove manual entry if none present.
-        removePreferenceIfBoolFalse(KEY_MANUAL, R.bool.config_show_manual);
 
         // Remove regulatory information if none present or config_show_regulatory_info is disabled
         final Intent intent = new Intent(Settings.ACTION_SHOW_REGULATORY_INFO);
@@ -238,7 +219,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                         RestrictedLockUtils.sendShowAdminSupportDetailsIntent(getActivity(),
                                 mFunDisallowedAdmin);
                     }
-                    Log.d(LOG_TAG, "Sorry, no fun for you!");
                     return false;
                 }
 
@@ -305,15 +285,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                         Toast.LENGTH_LONG);
                 mDevHitToast.show();
             }
-        } else if (preference.getKey().equals(KEY_SECURITY_PATCH)) {
-            if (getPackageManager().queryIntentActivities(preference.getIntent(), 0).isEmpty()) {
-                // Don't send out the intent to stop crash
-                Log.w(LOG_TAG, "Stop click action on " + KEY_SECURITY_PATCH + ": "
-                        + "queryIntentActivities() returns empty" );
-                return true;
-            }
-        } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
-            sendFeedback();
         }
         return super.onPreferenceTreeClick(preference);
     }
@@ -325,8 +296,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             try {
                 preferenceGroup.removePreference(findPreference(preference));
             } catch (RuntimeException e) {
-                Log.d(LOG_TAG, "Property '" + property + "' missing and no '"
-                        + preference + "' preference");
             }
         }
     }
@@ -372,7 +341,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 if(mRegionalizationService.readFile(MBN_VERSION_PATH, "").size() > 0){
                     mVersion = mRegionalizationService.readFile(MBN_VERSION_PATH, "").get(0);
                 }
-                Log.d(LOG_TAG,"read MBNVersion="+mVersion);
             }catch (Exception e) {
                 Log.e(LOG_TAG, "IOException:"+ e.getMessage());
             }
@@ -393,7 +361,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 if(mRegionalizationService.readFile(QGP_VERSION_PATH, "").size() > 0){
                     mVersion = mRegionalizationService.readFile(QGP_VERSION_PATH, "").get(0);
                 }
-                Log.d(LOG_TAG,"read QGPVersion="+mVersion);
             }catch (Exception e) {
                 Log.e(LOG_TAG, "IOException:"+ e.getMessage());
             }
@@ -416,16 +383,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         } catch (RuntimeException e) {
             // No recovery
         }
-    }
-
-    private void sendFeedback() {
-        String reporterPackage = DeviceInfoUtils.getFeedbackReporterPackage(getActivity());
-        if (TextUtils.isEmpty(reporterPackage)) {
-            return;
-        }
-        Intent intent = new Intent(Intent.ACTION_BUG_REPORT);
-        intent.setPackage(reporterPackage);
-        startActivityForResult(intent, 0);
     }
 
     private static class SummaryProvider implements SummaryLoader.SummaryProvider {
@@ -482,10 +439,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 // Remove Baseband version if wifi-only device
                 if (Utils.isWifiOnly(context)) {
                     keys.add((KEY_BASEBAND_VERSION));
-                }
-                // Dont show feedback option if there is no reporter.
-                if (TextUtils.isEmpty(DeviceInfoUtils.getFeedbackReporterPackage(context))) {
-                    keys.add(KEY_DEVICE_FEEDBACK);
                 }
                 return keys;
             }

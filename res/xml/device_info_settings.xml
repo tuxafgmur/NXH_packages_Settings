@@ -19,37 +19,11 @@
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:title="@string/about_settings">
 
-        <PreferenceScreen android:key="xenonhd_logo"
-                          android:enabled="false"
-                          android:layout="@layout/xenonhd_logo_row" />
-
-        <!-- XenonOTA -->
-        <PreferenceScreen android:key="xenonota"
-                android:title="@string/xenonota_title"
-                android:summary="@string/xenonota_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.xenonota"
-                    android:targetClass="com.xenonota.MainActivity" />
-        </PreferenceScreen>
-
-        <!-- Changelog -->
-        <PreferenceScreen android:key="changelog_xenonhd"
-                android:title="@string/changelog_xenonhd_title"
-                android:summary="@string/changelog_xenonhd_summary"
-                android:fragment="com.android.settings.xenonhd.Changelog" />
-
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
                 android:summary="@string/device_status_summary"
                 android:fragment="com.android.settings.deviceinfo.Status">
-        </PreferenceScreen>
-
-        <!-- Manual -->
-        <PreferenceScreen
-                android:key="manual"
-                android:title="@string/manual">
-            <intent android:action="android.settings.SHOW_MANUAL" />
         </PreferenceScreen>
 
         <PreferenceScreen
@@ -62,11 +36,6 @@
                 android:key="safety_info"
                 android:title="@string/safety_and_regulatory_info">
                 <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO" />
-        </PreferenceScreen>
-
-        <!-- Feedback on the device -->
-        <PreferenceScreen android:key="device_feedback"
-                android:title="@string/device_feedback">
         </PreferenceScreen>
 
         <!-- Device name -->
@@ -113,12 +82,9 @@
                 settings:allowDividerBelow="true" />
 
         <!-- Security patch level -->
-        <PreferenceScreen android:key="security_patch"
+        <Preference android:key="security_patch"
                 android:title="@string/security_patch"
-                android:summary="@string/device_info_default">
-                <intent android:action="android.intent.action.VIEW"
-                        android:data="https://source.android.com/security/bulletin/" />
-        </PreferenceScreen>
+                android:summary="@string/device_info_default" />
 
         <!-- Device FCC equipment id -->
         <com.android.settings.DividerPreference
