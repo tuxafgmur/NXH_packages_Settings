@@ -19,20 +19,38 @@
         android:title="@string/development_settings_title">
 
     <PreferenceScreen
-            android:key="development_tools"
-            android:title="@string/development_tools_title"
-            android:persistent="false" >
-        <intent
-                android:action="android.settings.development.LAUNCH_TOOLS"
-                android:targetPackage="com.android.development"
-                android:targetClass="com.android.development.Development" />
-    </PreferenceScreen>
+        android:key="running_apps"
+        android:title="@string/runningservices_settings_title"
+        android:summary="@string/runningservices_settings_summary"
+        android:fragment="com.android.settings.applications.RunningServices" />
 
     <cyanogenmod.preference.CMSecureSettingSwitchPreference
             android:key="advanced_reboot"
             android:title="@string/advanced_reboot_title"
             android:summary="@string/advanced_reboot_summary"
 	    android:defaultValue="true" />
+
+    <cyanogenmod.preference.CMSecureSettingSwitchPreference
+        android:key="kill_app_longpress_back"
+        android:title="@string/kill_app_longpress_back"
+        android:summary="@string/kill_app_longpress_back_summary"/>
+
+    <ListPreference
+        android:key="kill_app_longpress_timeout"
+        android:title="@string/kill_app_longpress_timeout_title"
+        android:entries="@array/kill_app_longpress_timeout_entries"
+        android:entryValues="@array/kill_app_longpress_timeout_values"
+        android:dependency="kill_app_longpress_back" />
+
+    <ListPreference
+        android:key="root_access"
+        android:title="@string/root_access"
+        android:persistent="false" />
+
+    <Preference
+        android:key="root_appops"
+        android:title="@string/root_appops_title"
+        android:summary="@string/root_appops_summary" />
 
     <PreferenceScreen
             android:key="local_backup_password"
@@ -70,21 +88,10 @@
         settings:useAdditionalSummary="true"/>
 
     <PreferenceScreen
-        android:key="running_apps"
-        android:title="@string/runningservices_settings_title"
-        android:summary="@string/runningservices_settings_summary"
-        android:fragment="com.android.settings.applications.RunningServices" />
-
-    <PreferenceScreen
         android:key="convert_to_file_encryption"
         android:title="@string/convert_to_file_encryption"
         android:summary="@string/convert_to_file_encryption_enabled"
         android:fragment="com.android.settings.applications.ConvertToFbe" />
-
-    <com.android.settings.ColorModePreference
-        android:key="color_mode"
-        android:title="@string/picture_color_mode"
-        android:summary="@string/picture_color_mode_desc" />
 
     <ListPreference
         android:key="select_webview_provider"
@@ -97,26 +104,15 @@
         android:title="@string/enable_webview_multiprocess"
         android:summary="@string/enable_webview_multiprocess_desc" />
 
+    <com.android.settings.ColorModePreference
+        android:key="color_mode"
+        android:title="@string/picture_color_mode"
+        android:summary="@string/picture_color_mode_desc" />
+
     <SwitchPreference
         android:key="color_temperature"
         android:title="@string/color_temperature"
         android:summary="@string/color_temperature_desc" />
-
-    <PreferenceScreen
-        android:key="demo_mode"
-        android:title="@string/demo_mode">
-        <intent android:action="com.android.settings.action.DEMO_MODE" />
-    </PreferenceScreen>
-
-    <ListPreference
-        android:key="root_access"
-        android:title="@string/root_access"
-        android:persistent="false" />
-
-    <Preference
-        android:key="root_appops"
-        android:title="@string/root_appops_title"
-        android:summary="@string/root_appops_summary" />
 
     <PreferenceCategory android:key="debug_debugging_category"
             android:title="@string/debug_debugging_category">
@@ -158,6 +154,11 @@
             android:title="@string/enable_terminal_title"
             android:summary="@string/enable_terminal_summary" />
 
+        <SwitchPreference
+            android:key="verify_apps_over_usb"
+            android:title="@string/verify_apps_over_usb_title"
+            android:summary="@string/verify_apps_over_usb_summary"/>
+
         <PreferenceScreen android:key="mock_location_app"
             android:title="@string/mock_location_app" />
 
@@ -172,11 +173,6 @@
             android:key="wait_for_debugger"
             android:title="@string/wait_for_debugger"
             android:summary="@string/wait_for_debugger_summary"/>
-
-        <SwitchPreference
-            android:key="verify_apps_over_usb"
-            android:title="@string/verify_apps_over_usb_title"
-            android:summary="@string/verify_apps_over_usb_summary"/>
 
         <ListPreference
             android:key="select_logd_size"
@@ -201,6 +197,13 @@
 
     <PreferenceCategory android:key="debug_networking_category"
             android:title="@string/debug_networking_category">
+
+        <ListPreference
+            android:key="select_usb_configuration"
+            android:title="@string/select_usb_configuration_title"
+            android:dialogTitle="@string/select_usb_configuration_dialog_title"
+            android:entries="@array/usb_configuration_titles"
+            android:entryValues="@array/usb_configuration_values" />
 
         <SwitchPreference
             android:key="wifi_display_certification"
@@ -227,13 +230,6 @@
             android:title="@string/mobile_data_always_on"
             android:summary="@string/mobile_data_always_on_summary"/>
 
-        <ListPreference
-            android:key="select_usb_configuration"
-            android:title="@string/select_usb_configuration_title"
-            android:dialogTitle="@string/select_usb_configuration_dialog_title"
-            android:entries="@array/usb_configuration_titles"
-            android:entryValues="@array/usb_configuration_values" />
-
         <SwitchPreference
             android:key="bluetooth_disable_absolute_volume"
             android:title="@string/bluetooth_disable_absolute_volume"
@@ -258,21 +254,6 @@
     <PreferenceCategory android:key="debug_drawing_category"
             android:title="@string/debug_drawing_category">
 
-        <SwitchPreference
-            android:key="show_screen_updates"
-            android:title="@string/show_screen_updates"
-            android:summary="@string/show_screen_updates_summary"/>
-
-        <SwitchPreference
-            android:key="debug_layout"
-            android:title="@string/debug_layout"
-            android:summary="@string/debug_layout_summary"/>
-
-        <SwitchPreference
-            android:key="force_rtl_layout_all_locales"
-            android:title="@string/force_rtl_layout_all_locales"
-            android:summary="@string/force_rtl_layout_all_locales_summary"/>
-
         <com.android.settings.AnimationScalePreference
             android:key="window_animation_scale"
             android:title="@string/window_animation_scale_title"
@@ -291,6 +272,21 @@
             android:entries="@array/animator_duration_scale_entries"
             android:entryValues="@array/animator_duration_scale_values" />
 
+        <SwitchPreference
+            android:key="show_screen_updates"
+            android:title="@string/show_screen_updates"
+            android:summary="@string/show_screen_updates_summary"/>
+
+        <SwitchPreference
+            android:key="debug_layout"
+            android:title="@string/debug_layout"
+            android:summary="@string/debug_layout_summary"/>
+
+        <SwitchPreference
+            android:key="force_rtl_layout_all_locales"
+            android:title="@string/force_rtl_layout_all_locales"
+            android:summary="@string/force_rtl_layout_all_locales_summary"/>
+
         <ListPreference
             android:key="overlay_display_devices"
             android:title="@string/overlay_display_devices_title"
@@ -308,6 +304,11 @@
                 android:summary="@string/force_hw_ui_summary"/>
 
         <SwitchPreference
+                android:key="force_msaa"
+                android:title="@string/force_msaa"
+                android:summary="@string/force_msaa_summary"/>
+
+        <SwitchPreference
                 android:key="show_hw_screen_udpates"
                 android:title="@string/show_hw_screen_updates"
                 android:summary="@string/show_hw_screen_updates_summary"/>
@@ -318,21 +319,10 @@
                 android:summary="@string/show_hw_layers_updates_summary"/>
 
         <ListPreference
-                android:key="debug_hw_overdraw"
-                android:title="@string/debug_hw_overdraw"
-                android:entries="@array/debug_hw_overdraw_entries"
-                android:entryValues="@array/debug_hw_overdraw_values" />
-
-        <ListPreference
                 android:key="show_non_rect_clip"
                 android:title="@string/show_non_rect_clip"
                 android:entries="@array/show_non_rect_clip_entries"
                 android:entryValues="@array/show_non_rect_clip_values" />
-
-        <SwitchPreference
-                android:key="force_msaa"
-                android:title="@string/force_msaa"
-                android:summary="@string/force_msaa_summary"/>
 
         <SwitchPreference
                 android:key="disable_overlays"
@@ -345,6 +335,12 @@
                 android:key="simulate_color_space"
                 android:summary="%s"
                 android:title="@string/simulate_color_space" />
+
+        <ListPreference
+                android:key="debug_hw_overdraw"
+                android:title="@string/debug_hw_overdraw"
+                android:entries="@array/debug_hw_overdraw_entries"
+                android:entryValues="@array/debug_hw_overdraw_values" />
 
     </PreferenceCategory>
 
@@ -377,6 +373,10 @@
     <PreferenceCategory android:key="debug_applications_category"
             android:title="@string/debug_applications_category">
 
+        <Preference
+                android:key="inactive_apps"
+                android:title="@string/inactive_apps_title" />
+
         <SwitchPreference
             android:key="immediately_destroy_activities"
             android:title="@string/immediately_destroy_activities"
@@ -388,20 +388,10 @@
             android:entries="@array/app_process_limit_entries"
             android:entryValues="@array/app_process_limit_values" />
 
-        <!-- hiding for now.
-        <Preference
-                android:key="background_check"
-                android:title="@string/background_check_pref" />
-        -->
-
         <SwitchPreference
             android:key="show_all_anrs"
             android:title="@string/show_all_anrs"
             android:summary="@string/show_all_anrs_summary"/>
-
-        <Preference
-                android:key="inactive_apps"
-                android:title="@string/inactive_apps_title" />
 
         <SwitchPreference
             android:key="force_allow_on_external"
@@ -417,17 +407,21 @@
             android:key="reset_shortcut_manager_throttling"
             android:title="@string/reset_shortcut_manager_throttling" />
 
-        <cyanogenmod.preference.CMSecureSettingSwitchPreference
-            android:key="kill_app_longpress_back"
-            android:title="@string/kill_app_longpress_back"
-            android:summary="@string/kill_app_longpress_back_summary"/>
+        <PreferenceScreen
+            android:key="demo_mode"
+            android:title="@string/demo_mode">
+            <intent android:action="com.android.settings.action.DEMO_MODE" />
+        </PreferenceScreen>
 
-        <ListPreference
-            android:key="kill_app_longpress_timeout"
-            android:title="@string/kill_app_longpress_timeout_title"
-            android:entries="@array/kill_app_longpress_timeout_entries"
-            android:entryValues="@array/kill_app_longpress_timeout_values"
-            android:dependency="kill_app_longpress_back" />
+        <PreferenceScreen
+                android:key="development_tools"
+                android:title="@string/development_tools_title"
+                android:persistent="false" >
+            <intent
+                    android:action="android.settings.development.LAUNCH_TOOLS"
+                    android:targetPackage="com.android.development"
+                    android:targetClass="com.android.development.Development" />
+        </PreferenceScreen>
 
      </PreferenceCategory>
 
