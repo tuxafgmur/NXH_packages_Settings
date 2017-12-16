@@ -62,14 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">صوت التقاط صورة للشاشة</string>
   <string name="screenshot_sound_summary">تشغيل صوت عند التقاط صورة للشاشة</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">طبقات Substratum</string>
-  <string name="menu_show_substratum">أظهر الطبقات</string>
-  <string name="menu_hide_substratum">إخفاء الطبقات</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">طبقات ايقونة Substratum</string>
-  <string name="menu_show_substratum_icons">إظهار ايقونة الطبقات</string>
-  <string name="menu_hide_substratum_icons">إخفاء أيقونة الطبقات</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">إعدادات</string>
   <string name="xenonhd_misc_title">خيارات متنوعة</string>
@@ -159,9 +151,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">إخفاء شريط الحالة</string>
   <string name="lockscreen_hide_status_bar_summary">لمس شريط الحالة لتبديل الرؤية</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">أجبار تصريح كل تطبيق ثيمات</string>
-  <string name="force_authorize_substratum_packages_summary">السماح لتطبيقات من المصادر غير المعروفة</string>
   <!-- QS tile labels visibility -->
   <string name="qs_menu_item_titles_summaryOn">اظهار التسميات</string>
   <string name="qs_menu_item_titles_summaryOff">إخفاء التسميات</string>

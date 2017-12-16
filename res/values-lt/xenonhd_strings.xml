@@ -41,8 +41,6 @@
   <string name="night_mode_no">Šviesi</string>
   <string name="night_mode_yes">Tamsi</string>
   <!-- Screenshot sound -->
-  <!-- Manage applications: show substratum overlays -->
-  <!-- Manage applications: show substratum icon overlays -->
   <!-- XenonHD Configurations-->
   <string name="xenonhd_lockscreen_title">Ekrano užraktas</string>
   <string name="xenonhd_ui_title">Vartotojo sąsaja</string>
@@ -92,7 +90,6 @@
   <!-- Fingerprint authentication vibration -->
   <!-- Fingerprint unlock keystore -->
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
   <string name="dialog_color_picker">Spalvos parinkimas</string>

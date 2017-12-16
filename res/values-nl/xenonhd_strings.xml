@@ -49,8 +49,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Schermafdruk geluid</string>
   <string name="screenshot_sound_summary">Geluidseffect wanneer screenshot wordt genomen</string>
-  <!-- Manage applications: show substratum overlays -->
-  <!-- Manage applications: show substratum icon overlays -->
   <!-- XenonHD Configurations-->
   <!-- Selinux Switch -->
   <!-- Recents Membar -->
@@ -68,7 +66,6 @@
   <!-- Fingerprint authentication vibration -->
   <!-- Fingerprint unlock keystore -->
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
   <string name="dialog_color_picker">Kleur Kiezer</string>

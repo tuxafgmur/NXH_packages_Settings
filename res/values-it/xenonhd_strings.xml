@@ -62,14 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Suono screenshot</string>
   <string name="screenshot_sound_summary">Riproduci un suono quando si effettua uno screenshot</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Overlay di Substratum</string>
-  <string name="menu_show_substratum">Mostra overlay</string>
-  <string name="menu_hide_substratum">Nascondi overlay</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Icona overlay di Substratum</string>
-  <string name="menu_show_substratum_icons">Mostra icone overlay</string>
-  <string name="menu_hide_substratum_icons">Nascondi icone overlay</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Configurazioni</string>
   <string name="xenonhd_misc_title">Varie</string>
@@ -189,9 +181,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Nascondi barra di stato</string>
   <string name="lockscreen_hide_status_bar_summary">Tocca la barra di stato per alternare la visibilità</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Forza l\'autorizzazione ad ogni applicazione del tema</string>
-  <string name="force_authorize_substratum_packages_summary">Consenti l\'installazione di applicazioni da fonti sconosciute</string>
   <!-- QS tile labels visibility -->
   <string name="qs_menu_item_titles">Etichette tile</string>
   <string name="qs_menu_item_titles_summaryOn">Etichette visibili</string>

@@ -62,14 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Гук скрыншота</string>
   <string name="screenshot_sound_summary">Прайграваць гук пры скрыншоце</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Пласты Substratum</string>
-  <string name="menu_show_substratum">Паказваць пласты</string>
-  <string name="menu_hide_substratum">Схаваць пласты</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Значок Substratum пластоў</string>
-  <string name="menu_show_substratum_icons">Паказаць значок пластоў</string>
-  <string name="menu_hide_substratum_icons">Схаваць значок пластоў</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Пашыраныя налады</string>
   <string name="xenonhd_misc_title">Рознае</string>
@@ -189,9 +181,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Хаваць радок стану</string>
   <string name="lockscreen_hide_status_bar_summary">Дакраніцеся да радку стану для адлюстравання</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Прымусова аўтарызаўваць усе тэмы праграм</string>
-  <string name="force_authorize_substratum_packages_summary">Дазволіць усталёўку тэм праграм з невядомых крыніц</string>
   <!-- QS tile labels visibility -->
   <string name="qs_menu_item_titles">Подпісы плітак</string>
   <string name="qs_menu_item_titles_summaryOn">Подпісы адлюстровываюцца</string>

@@ -62,14 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">螢幕擷取音效</string>
   <string name="screenshot_sound_summary">擷取螢幕畫面時播放音效</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">底層覆蓋</string>
-  <string name="menu_show_substratum">顯示覆蓋</string>
-  <string name="menu_hide_substratum">隱藏覆蓋</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">底層圖示覆蓋</string>
-  <string name="menu_show_substratum_icons">顯示圖示覆蓋</string>
-  <string name="menu_hide_substratum_icons">隱藏圖示覆蓋</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">配置</string>
   <string name="xenonhd_misc_title">其他事項</string>
@@ -189,9 +181,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">隱藏狀態列</string>
   <string name="lockscreen_hide_status_bar_summary">輕觸狀態列即可切換可見度</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">強制授權每個主題應用程式</string>
-  <string name="force_authorize_substratum_packages_summary">允許來源不明的主題應用程式</string>
   <!-- QS tile labels visibility -->
   <string name="qs_menu_item_titles">快速設定圖塊標籤</string>
   <string name="qs_menu_item_titles_summaryOn">顯示標籤</string>

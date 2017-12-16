@@ -62,14 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Звук скриншота</string>
   <string name="screenshot_sound_summary">Проигрывать звук при скриншоте</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Слои Substratum</string>
-  <string name="menu_show_substratum">Показывать слои</string>
-  <string name="menu_hide_substratum">Скрыть слои</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Слои Substratum для значков</string>
-  <string name="menu_show_substratum_icons">Показывать слои для значков</string>
-  <string name="menu_hide_substratum_icons">Скрыть слои для значков</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Расширенные настройки</string>
   <string name="xenonhd_misc_title">Разное</string>
@@ -189,9 +181,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Скрыть строку состояния</string>
   <string name="lockscreen_hide_status_bar_summary">Прикоснитесь к строке состояния для отображения</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Принудительно запрашивать разрешения для каждой темы</string>
-  <string name="force_authorize_substratum_packages_summary">Разрешить установку тем из неизвестных источников</string>
   <!-- QS tile labels visibility -->
   <string name="qs_menu_item_titles">Подписи плиток</string>
   <string name="qs_menu_item_titles_summaryOn">Подписи отображаются</string>

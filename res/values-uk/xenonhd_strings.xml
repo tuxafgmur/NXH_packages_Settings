@@ -61,14 +61,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Звук скріншота</string>
   <string name="screenshot_sound_summary">Програвати звук при скріншоті</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Шари Substratum</string>
-  <string name="menu_show_substratum">Відображати шари</string>
-  <string name="menu_hide_substratum">Приховати шари</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Шари іконок Substratum</string>
-  <string name="menu_show_substratum_icons">Відображати шари іконок</string>
-  <string name="menu_hide_substratum_icons">Приховати іконку шарів</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Конфігурації</string>
   <string name="xenonhd_misc_title">Різне</string>
@@ -95,7 +87,6 @@
   <!-- Fingerprint authentication vibration -->
   <!-- Fingerprint unlock keystore -->
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
   <string name="dialog_color_picker">Палітра кольорів</string>

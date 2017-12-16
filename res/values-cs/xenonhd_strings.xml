@@ -62,14 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Zvuk při snímku obrazovky</string>
   <string name="screenshot_sound_summary">Přehraje zvukový efekt při snímku obrazovky</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratum překrytí</string>
-  <string name="menu_show_substratum">Zobrazit překrytí</string>
-  <string name="menu_hide_substratum">Skrýt překrytí</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Ikona Substratum překrytí</string>
-  <string name="menu_show_substratum_icons">Zobrazit ikonu překrytí</string>
-  <string name="menu_hide_substratum_icons">Skrýt ikonu překrytí</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Nastavení</string>
   <string name="xenonhd_misc_title">Různé</string>
@@ -189,9 +181,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Skrýt stavovou lištu</string>
   <string name="lockscreen_hide_status_bar_summary">Klikněte na stavovou lištu pro přepínání viditelnosti</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Vyžadovat povolení pro každý motiv</string>
-  <string name="force_authorize_substratum_packages_summary">Povolit instalaci motivů z neznámých zdrojů</string>
   <!-- QS tile labels visibility -->
   <string name="qs_menu_item_titles">Popisky QS dlaždic</string>
   <string name="qs_menu_item_titles_summaryOn">Popisky zobrazeny</string>

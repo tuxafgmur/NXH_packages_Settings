@@ -62,14 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Ekran Görüntüsü Sesi</string>
   <string name="screenshot_sound_summary">Ekran görüntüsü alındığında bildirim çal</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratum bindirmeleri</string>
-  <string name="menu_show_substratum">Bindirmeleri göster</string>
-  <string name="menu_hide_substratum">Bindirmeleri gizle</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Substratum simge bindirmeleri</string>
-  <string name="menu_show_substratum_icons">Simge bindirmelerini göster</string>
-  <string name="menu_hide_substratum_icons">Simge bindirmelerini gizle</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Yapılandır</string>
   <string name="xenonhd_misc_title">Çeşitler</string>
@@ -189,9 +181,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Durum çubuğunu gizle</string>
   <string name="lockscreen_hide_status_bar_summary">Görünür yapmak için durum çubuğuna dokunun</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Her tema uygulamasını zorla yetkilendir</string>
-  <string name="force_authorize_substratum_packages_summary">Bilinmeyen kaynaklardan tema uygulamalarına izin ver</string>
   <!-- QS tile labels visibility -->
   <string name="qs_menu_item_titles">QS başlıkları</string>
   <string name="qs_menu_item_titles_summaryOn">Etiketler açık</string>

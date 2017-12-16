@@ -62,14 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Zvuk snimanja zaslona</string>
   <string name="screenshot_sound_summary">Reprodukcija zvučnog efekta dok snimate zaslon</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratum slojevi</string>
-  <string name="menu_show_substratum">Prikaži slojeve</string>
-  <string name="menu_hide_substratum">Sakrij slojeve</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Substratum ikona slojeva</string>
-  <string name="menu_show_substratum_icons">Prikaži ikonu slojeva</string>
-  <string name="menu_hide_substratum_icons">Sakrij ikonu slojeva</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Postavke</string>
   <string name="xenonhd_misc_title">Razno</string>
@@ -97,7 +89,6 @@
   <!-- Fingerprint authentication vibration -->
   <!-- Fingerprint unlock keystore -->
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
   <!-- Carrier label -->

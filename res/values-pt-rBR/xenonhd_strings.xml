@@ -62,13 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Som de captura de tela</string>
   <string name="screenshot_sound_summary">Tocar efeito de som ao capturar tela</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="menu_show_substratum">Mostrar overlays</string>
-  <string name="menu_hide_substratum">Esconder os overlays</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Sobreposições de ícone do substrato</string>
-  <string name="menu_show_substratum_icons">Mostrar sobreposições de ícone</string>
-  <string name="menu_hide_substratum_icons">Ocultar sobreposições de ícone</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Configurações</string>
   <string name="xenonhd_misc_title">Outros</string>
@@ -178,7 +171,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Ocultar a barra de status</string>
   <string name="lockscreen_hide_status_bar_summary">Toque a barra de status para alternar a visibilidade</string>
-  <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
   <string name="dialog_color_picker">Selecionador de cores</string>

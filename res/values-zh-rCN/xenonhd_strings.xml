@@ -59,10 +59,6 @@
   <string name="night_mode_yes">暗</string>
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">截图提示音</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="menu_show_substratum">显示叠加层</string>
-  <string name="menu_hide_substratum">隐藏叠加层</string>
-  <!-- Manage applications: show substratum icon overlays -->
   <!-- XenonHD Configurations-->
   <string name="xenonhd_lockscreen_title">锁屏</string>
   <!-- Selinux Switch -->
@@ -116,7 +112,6 @@
   <!-- Fingerprint authentication vibration -->
   <!-- Fingerprint unlock keystore -->
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
   <string name="dialog_color_picker">颜色选择</string>

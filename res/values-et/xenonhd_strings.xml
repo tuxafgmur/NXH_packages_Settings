@@ -62,14 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Kuvatõmmise heli</string>
   <string name="screenshot_sound_summary">Esitab heli, kui kuvatõmmis on võetud</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratumi ülekatted</string>
-  <string name="menu_show_substratum">Näita ülekatteid</string>
-  <string name="menu_hide_substratum">Peida ülekatted</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Substratumi ikooni ülekatted</string>
-  <string name="menu_show_substratum_icons">Näita ikooni ülekatteid</string>
-  <string name="menu_hide_substratum_icons">Peida ikooni ülekatted</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Konfiguratioonid</string>
   <string name="xenonhd_misc_title">Varia</string>
@@ -181,7 +173,6 @@
   <!-- Fingerprint authentication vibration -->
   <!-- Fingerprint unlock keystore -->
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
   <string name="dialog_color_picker">Värvi valija</string>

@@ -62,14 +62,6 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Képernyőkép hangja</string>
   <string name="screenshot_sound_summary">Hang lejátszása képernyőkép készítésekor</string>
-  <!-- Manage applications: show substratum overlays -->
-  <string name="filter_substratum_apps">Substratum fedvények</string>
-  <string name="menu_show_substratum">Fedvények megjelenítése</string>
-  <string name="menu_hide_substratum">Fedvények elrejtése</string>
-  <!-- Manage applications: show substratum icon overlays -->
-  <string name="filter_substratum_icons">Substratum ikonfedvények</string>
-  <string name="menu_show_substratum_icons">Ikonfedvények megjelenítése</string>
-  <string name="menu_hide_substratum_icons">Ikonfedvények elrejtése</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Testreszabás</string>
   <string name="xenonhd_misc_title">Vegyes</string>
@@ -189,9 +181,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Állapotsáv elrejtése</string>
   <string name="lockscreen_hide_status_bar_summary">Érintse meg az állapotsávot a láthatóság kapcsolásához</string>
-  <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Minden téma alkalmazás engedélyezésének kényszerítése</string>
-  <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
   <!-- QS tile labels visibility -->
   <string name="qs_menu_item_titles">Gyorsbeállítás csempék címkéi</string>
   <string name="qs_menu_item_titles_summaryOn">Címkék megjelenítve</string>
