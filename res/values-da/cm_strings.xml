@@ -273,8 +273,6 @@
   <string name="pa_login_checking_password">Kontrollerer konto\u2026</string>
   <string name="pa_login_incorrect_login">Login var forkert</string>
   <string name="pa_pattern_or_fingerprint_header">Skal tegne mønster eller bruge fingeraftryk til at låse op</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Vis vejr</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Sløring af baggrund</string>
   <!-- Proximity wake -->

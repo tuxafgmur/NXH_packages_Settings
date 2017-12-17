@@ -275,8 +275,6 @@
   <string name="pa_login_checking_password">Проверавам налог\u2026</string>
   <string name="pa_login_incorrect_login">Грешка при пријављивању</string>
   <string name="pa_pattern_or_fingerprint_header">За откључавање је потребан шаблон или отисак прста</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Информације о времену</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Замагли позадину</string>
   <!-- Proximity wake -->

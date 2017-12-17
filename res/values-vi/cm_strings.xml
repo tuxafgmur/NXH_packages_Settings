@@ -273,8 +273,6 @@
   <string name="pa_login_checking_password">Đang kiểm tra tài khoản\u2026</string>
   <string name="pa_login_incorrect_login">Thông tin đăng nhập không chính xác</string>
   <string name="pa_pattern_or_fingerprint_header">Phải vẽ hình hoặc dùng vân tay để mở khoá</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Hiển thị thời tiết</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Nền mờ</string>
   <!-- Proximity wake -->

@@ -274,8 +274,6 @@
   <string name="pa_login_checking_password">Проверка на акаунт\u2026</string>
   <string name="pa_login_incorrect_login">Влизането е неуспешно</string>
   <string name="pa_pattern_or_fingerprint_header">Начертай фигура или използвай пръстов отпечатък за да отключиш</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Показване на времето</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Замъгляване на фона</string>
   <!-- Proximity wake -->

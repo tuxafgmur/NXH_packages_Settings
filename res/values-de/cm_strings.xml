@@ -271,8 +271,6 @@
   <string name="pa_login_checking_password">Konto wird überprüft\u2026</string>
   <string name="pa_login_incorrect_login">Anmeldedaten sind nicht korrekt</string>
   <string name="pa_pattern_or_fingerprint_header">Fingerabdruck oder Muster zum Entsperren erforderlich</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Wetter anzeigen</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Hintergrund weichzeichnen</string>
   <!-- Proximity wake -->

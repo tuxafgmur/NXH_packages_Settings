@@ -271,8 +271,6 @@
   <string name="pa_login_checking_password">Provjera računa\u2026</string>
   <string name="pa_login_incorrect_login">Prijava je netočna</string>
   <string name="pa_pattern_or_fingerprint_header">Morate nacrtati uzorak ili koristiti otisak prsta za otključavanje</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Pokaži prognozu</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Zamagli pozadinu</string>
   <!-- Proximity wake -->

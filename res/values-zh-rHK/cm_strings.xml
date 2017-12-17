@@ -187,8 +187,6 @@
   <string name="pa_login_submit_button">登入</string>
   <string name="pa_login_checking_password">正在檢查帳戶\u2026</string>
   <string name="pa_login_incorrect_login">登入不正確</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">顯示天氣</string>
   <!-- title for lock screen blur preference -->
   <!-- Proximity wake -->
   <string name="proximity_wake_title">防止意外喚醒</string>

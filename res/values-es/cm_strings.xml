@@ -274,8 +274,6 @@
   <string name="pa_login_checking_password">Comprobando cuenta\u2026</string>
   <string name="pa_login_incorrect_login">El inicio de sesión fue incorrecto</string>
   <string name="pa_pattern_or_fingerprint_header">Debes dibujar el patrón o utilizar huellas digitales para desbloquear</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Mostrar el clima</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Desenfocar el fondo</string>
   <!-- Proximity wake -->

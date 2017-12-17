@@ -275,8 +275,6 @@
   <string name="pa_login_checking_password">Проверка данных\u2026</string>
   <string name="pa_login_incorrect_login">Не удалось войти</string>
   <string name="pa_pattern_or_fingerprint_header">Требуется граф. ключ или отпечаток пальца для разблокировки</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Сведения о погоде</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Размытие фона</string>
   <!-- Proximity wake -->

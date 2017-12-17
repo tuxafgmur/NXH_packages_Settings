@@ -271,8 +271,6 @@
   <string name="pa_login_checking_password">Έλεγχος λογαριασμού\u2026</string>
   <string name="pa_login_incorrect_login">Τα στοιχεία είναι εσφαλμένα</string>
   <string name="pa_pattern_or_fingerprint_header">Πρέπει να σχεδιάσετε το μοτίβο ή να χρησιμοποιήσετε το δακτυλικό αποτύπωμα για να ξεκλειδώσετε</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Εμφάνιση καιρού</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Θολό παρασκήνιο</string>
   <!-- Proximity wake -->

@@ -274,8 +274,6 @@
   <string name="pa_login_checking_password">S\'està comprovant el compte\u2026</string>
   <string name="pa_login_incorrect_login">Connexió incorrecta</string>
   <string name="pa_pattern_or_fingerprint_header">Has de dibuixar el patró o utilitzar l\'empremta digital per desbloquejar</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Mostra el temps</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Desenfoca el fons</string>
   <!-- Proximity wake -->

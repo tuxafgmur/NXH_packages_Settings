@@ -263,8 +263,6 @@
   <string name="pa_login_checking_password">التحقق من الحساب\u2026</string>
   <string name="pa_login_incorrect_login">تسجيل دخول غير صحيح</string>
   <string name="pa_pattern_or_fingerprint_header">يجب رسم نمط أو استخدام بصمة الأصابع لإلغاء التأمين</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">إظهار حالة الطقس</string>
   <!-- title for lock screen blur preference -->
   <!-- Proximity wake -->
   <string name="proximity_wake_title">منع الاستيقاظ العشوائي</string>

@@ -274,8 +274,6 @@
   <string name="pa_login_checking_password">A verificar a conta\u2026</string>
   <string name="pa_login_incorrect_login">Login incorreto</string>
   <string name="pa_pattern_or_fingerprint_header">Desenhe o padrão ou use a impressão digital para desbloquear</string>
-  <!-- title for lock screen weather preference -->
-  <string name="lockscreen_weather_enabled_title">Mostrar o tempo</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Desfocar fundo</string>
   <!-- Proximity wake -->
