@@ -16,24 +16,24 @@
   <string name="xenonhd_version">Versión de XenonHD</string>
   <string name="xenonhd_version_default">Desconocido</string>
   <string name="xenonhd_maintainer">Desarrollador</string>
-  <string name="xenonhd_maintainer_default">Desconocido</string>
+  <string name="xenonhd_maintainer_default">Ninguno</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Lista de cambios</string>
   <string name="changelog_xenonhd_error">No es posible mostrar la lista de cambios</string>
-  <string name="changelog_xenonhd_summary">Comprobar cambios en la versión actual</string>
+  <string name="changelog_xenonhd_summary">Comprobar cambios de la versión actual</string>
   <!-- Density category -->
   <string name="density_category">Opciones de densidad</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">Actualizaciones XenonHD</string>
   <string name="xenonota_summary">Buscar actualizaciones</string>
   <!-- Dev Options Enabled by Default -->
-  <string name="show_dev_already_enabled">No es necesario, las opciones de desarrollo ya están activadas por defecto</string>
+  <string name="show_dev_already_enabled">Las opciones de desarrollo ya están activadas</string>
   <!-- Phone info shortcut -->
   <string name="device_info_title">Información del dispositivo</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Contraseña de copia de seguridad</string>
   <!-- Notification sound timeout -->
-  <string name="app_notification_sound_timeout_title">Tiempo mínimo entre sonidos de notificaciones</string>
+  <string name="app_notification_sound_timeout_title">Tiempo mínimo entre sonidos de notificación</string>
   <string name="app_notification_sound_timeout_summary_template">Permite sonidos o vibraciones no más de una vez cada <xliff:g id="duration">%1$s </xliff:g></string>
   <string name="app_notification_sound_timeout_value_none">Sin restricciones</string>
   <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
@@ -44,7 +44,7 @@
   <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
   <!-- Randomize MAC addresses -->
   <string name="randomize_mac_title">Direcciones MAC aleatorias</string>
-  <string name="randomize_mac_summary">Asignar direcciones MAC al azar cuando se activan los dispositivos de red. MAC aleatoria se utiliza durante el escaneo, esté o no habilitado</string>
+  <string name="randomize_mac_summary">Asignar direcciones MAC aleatorias cuando se activan los dispositivos de red. La MAC aleatoria se utiliza durante el escaneo, esté habilitada o no</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Niveles de volumen</string>
   <string name="volume_steps_alarm_title">Alarma</string>
@@ -61,7 +61,7 @@
   <string name="night_mode_yes">Oscuro</string>
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Sonido de captura de pantalla</string>
-  <string name="screenshot_sound_summary">Reproducir sonido cuando se hace una captura de pantalla</string>
+  <string name="screenshot_sound_summary">Reproducir un sonido al capturar la imagen de pantalla</string>
   <!-- XenonHD Configurations-->
   <string name="xenonhd_title">Configuraciones</string>
   <string name="xenonhd_misc_title">Varios</string>
@@ -69,24 +69,24 @@
   <string name="xenonhd_ui_title">Interfaz de Usuario</string>
   <!-- Selinux Switch -->
   <string name="selinux_switch_title">Precaución al cambiar el modo SELinux</string>
-  <string name="selinux_switch_summary">SELinux es un conjunto de modificaciones del kernel y herramientas de espacio del usuario. Cambiar el modo SELinux requiere acceso root y puede causar efectos no deseados. Modo Permisivo recomendado. Usar bajo su propio riesgo</string>
+  <string name="selinux_switch_summary">SELinux es un conjunto de trfuerzos de seguridad del kernel. Cambiar el modo SELinux requiere acceso root y puede causar efectos no deseados, de los que eres el único responsable. Se recomineda el modo obligatorio.</string>
   <string name="selinux_title">Modo SELinux</string>
   <string name="selinux_permissive_title">Permisivo</string>
   <string name="selinux_enforcing_title">Obligatorio</string>
-  <string name="selinux_permissive_toast_title">SeLinux permisivo!</string>
+  <string name="selinux_permissive_toast_title">SeLinux permisivo</string>
   <!-- Recents Membar -->
   <string name="recents_membar">Barra de memoria</string>
-  <string name="systemui_recents_mem_display_title">Mostrar barra de memoria RAM</string>
-  <string name="systemui_recents_mem_display_summary">Mostrar barra de memoria RAM libre en multitarea</string>
+  <string name="systemui_recents_mem_display_title">Mostrar barra de memoria</string>
+  <string name="systemui_recents_mem_display_summary">Mostrar la barra de memoria RAM libre en multitarea</string>
   <!-- Quick settings config -->
   <string name="qs_layout_category">Opciones de configuración rápidas</string>
   <string name="qs_rows_portrait_title">Filas (vertical)</string>
   <string name="qs_rows_landscape_title">Filas (horizontal)</string>
   <string name="qs_columns_title">Columnas</string>
-  <string name="qs_easy_toggle_title">Modo avanzado QS Easy Toggle</string>
-  <string name="qs_easy_toggle_summary">Activar una pulsación para activar/desactivar Wi-Fi, datos móviles y bluetooth. Pulsación larga para ver ajustes avanzados</string>
-  <string name="qs_tile_single_tap_title">Spansh</string>
-  <string name="qs_tile_single_tap_summary">Español</string>
+  <string name="qs_easy_toggle_title">Toque fácil en la acción rápida</string>
+  <string name="qs_easy_toggle_summary">Un solo toque para activar/desactivar la opción. Pulsación larga para ver los ajustes avanzados</string>
+  <string name="qs_tile_single_tap_title">Toque simple en la acción rápida</string>
+  <string name="qs_tile_single_tap_summary">Añadir/eliminar acción rápida mediante un solo toque al configurar las acciones</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Precaución de desbloqueo rápido</string>
   <string name="quick_unlock_warning_summary">Esta característica se salta importantes mecanismos de seguridad y seguramente provoca un mal funcionamiento de la función multiusuario. Usar bajo tu propia responsabilidad</string>
@@ -131,12 +131,12 @@
   <string name="fourhalf_second">4.5 s</string>
   <string name="five_second">5 s</string>
   <string name="doze_notification_color_invert_title">Inversión de notificaciones</string>
-  <string name="doze_notification_color_invert_summary_off">Las notificaciones no se invierten. Úsalo para temas oscuros</string>
-  <string name="doze_notification_color_invert_summary_on">Se invertirán los colores de la notificaciones. Se usa para temas claros</string>
-  <string name="ambient_display_show_battery_title">Estado de batería</string>
-  <string name="ambient_display_show_battery_summary">Mostrar indicador de la batería durante el pulso</string>
+  <string name="doze_notification_color_invert_summary_off">Las notificaciones no se invierten. Adecuado para temas oscuros</string>
+  <string name="doze_notification_color_invert_summary_on">Se invertirán los colores de las notificaciones. Adecuado para temas claros</string>
+  <string name="ambient_display_show_battery_title">Estado de la batería</string>
+  <string name="ambient_display_show_battery_summary">Mostrar el indicador de la batería durante el pulso</string>
   <!-- Recents panel settings -->
-  <string name="show_clear_all_recents_button_title">Activar botón borrar todo</string>
+  <string name="show_clear_all_recents_button_title">Botón borrar todo</string>
   <string name="show_clear_all_recents_button_summary">Mostrar el botón de borrar todo mientras se usa la multitarea</string>
   <string name="recents_clear_all_location_title">Ubicación del botón borrar todo</string>
   <string name="recents_clear_all_location_top_right">Arriba a la derecha</string>
@@ -146,50 +146,50 @@
   <string name="recents_clear_all_location_bottom_left">Abajo a la izquierda</string>
   <string name="recents_clear_all_location_bottom_center">Abajo centrado</string>
   <!-- Dashboard options -->
-  <string name="dashboard_category">Opciones de la pantalla de ajustes</string>
+  <string name="dashboard_category">Opciones de ajustes</string>
   <string name="dashboard_suggestions_title">Sugerencias</string>
-  <string name="summary_dashboard_suggestions_enabled">Sugerencias habilitadas en la pantalla de ajustes</string>
-  <string name="summary_dashboard_suggestions_disabled">Sugerencias deshabilitadas en la pantalla de ajustes</string>
+  <string name="summary_dashboard_suggestions_enabled">Sugerencias habilitadas</string>
+  <string name="summary_dashboard_suggestions_disabled">Sugerencias deshabilitadas</string>
   <string name="remove_tile_summaries_title">Resúmenes</string>
-  <string name="remove_tile_summaries_summary_enabled">Resúmenes habilitados en la pantalla de ajustes</string>
-  <string name="remove_tile_summaries_summary_disabled">Resúmenes deshabilitados en la pantalla de ajustes</string>
+  <string name="remove_tile_summaries_summary_enabled">Resúmenes habilitados</string>
+  <string name="remove_tile_summaries_summary_disabled">Resúmenes deshabilitados</string>
   <string name="dashboard_conditions_title">Condiciones</string>
-  <string name="summary_dashboard_conditions_enabled">Las condiciones en el panel de ajustes están habilitadas</string>
-  <string name="summary_dashboard_conditions_disabled">Las condiciones en el panel de ajustes están deshabilitadas</string>
-  <string name="dashboard_columns_title">Columnas del panel de ajustes</string>
+  <string name="summary_dashboard_conditions_enabled">Condiciones habilitadas</string>
+  <string name="summary_dashboard_conditions_disabled">Condiciones deshabilitadas</string>
+  <string name="dashboard_columns_title">Columnas en ajustes</string>
   <string name="dashboard_columns_summary">Cambiar el número de columnas del panel de ajustes</string>
   <string name="dashboard_columns_portrait_title">Columnas (vertical)</string>
   <string name="dashboard_columns_landscape_title">Columnas (apaisado)</string>
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="hide_lockscreen_clock_title">Widget del reloj</string>
   <string name="hide_lockscreen_clock_summary_on">Widget de reloj en la pantalla de bloqueo</string>
-  <string name="hide_lockscreen_clock_summary_off">Widget de reloj escondido en la pantalla de bloqueo</string>
+  <string name="hide_lockscreen_clock_summary_off">Widget de reloj oculto en la pantalla de bloqueo</string>
   <string name="hide_lockscreen_date_title">Widget de la fecha</string>
-  <string name="hide_lockscreen_date_summary_on">Mostrando fecha debajo del widget de reloj</string>
-  <string name="hide_lockscreen_date_summary_off">Ocultando fecha debajo del widget de reloj </string>
+  <string name="hide_lockscreen_date_summary_on">Mostrar la fecha debajo del widget de reloj</string>
+  <string name="hide_lockscreen_date_summary_off">Ocultar la fecha debajo del widget de reloj </string>
   <string name="hide_lockscreen_alarm_title">Texto de alarma</string>
-  <string name="hide_lockscreen_alarm_summary_on">Mostrando texto de alarma debajo del widget de reloj</string>
-  <string name="hide_lockscreen_alarm_summary_off">Ocultando texto de alarma debajo del widget de reloj</string>
+  <string name="hide_lockscreen_alarm_summary_on">Mostrar alarma debajo del widget de reloj</string>
+  <string name="hide_lockscreen_alarm_summary_off">Ocultar alarma debajo del widget de reloj</string>
   <!-- Emergency button -->
   <string name="emergency_button_title">Botón de emergencia</string>
   <string name="emergency_button_summary_on">Botón de emergencia en la pantalla de bloqueo</string>
   <string name="emergency_button_summary_off">Botón de emergencia oculto en la pantalla de bloqueo</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">Vibración de autenticación de huella digital</string>
-  <string name="fprint_sucess_vib_summary">Vibrar cuando la autenticación con la huella es correcta</string>
+  <string name="fprint_sucess_vib_summary">Vibrar cuando la autenticación de la huella es correcta</string>
   <!-- Fingerprint unlock keystore -->
   <string name="fp_unlock_keystore_title">Desbloqueo con huella dactilar después de reiniciar</string>
-  <string name="fp_unlock_keystore_summary">Permitir que el dispositivo siempre sea desbloqueado mediante huella dactilar, incluso después de reiniciar el sistema</string>
+  <string name="fp_unlock_keystore_summary">Permitir que el dispositivo siempre se desbloquee mediante la huella dactilar, incluso después de reiniciar el sistema</string>
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Ocultar barra de estado</string>
-  <string name="lockscreen_hide_status_bar_summary">Toque la barra de estado para cambiar la visibilidad</string>
+  <string name="lockscreen_hide_status_bar_summary">Toca la barra de estado para cambiar la visibilidad</string>
   <!-- QS tile labels visibility -->
-  <string name="qs_menu_item_titles">Etiquetas de azulejos en selección rápida</string>
+  <string name="qs_menu_item_titles">Etiquetas de opciones rápidas</string>
   <string name="qs_menu_item_titles_summaryOn">Las etiquetas se muestran</string>
   <string name="qs_menu_item_titles_summaryOff">Las etiquetas se ocultan</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Selección de color</string>
-  <string name="press_color_to_apply">Pulse color de debajo para aplicar</string>
+  <string name="press_color_to_apply">Pulsa el color de debajo para aplicar</string>
   <string name="hex">Hex:</string>
   <string name="set">Establecer</string>
   <string name="color_default">Por defecto</string>
@@ -197,12 +197,12 @@
   <string name="carrier_title">Nombre del operador</string>
   <string name="carrier_options_summary">Personalizar la etiqueta del operador</string>
   <string name="custom_carrier_label_title">Nombre personalizado del operador</string>
-  <string name="custom_carrier_label_explain">Introduce un nuevo nombre. Deje en blanco para volver al nombre por defecto.</string>
-  <string name="custom_carrier_label_notset">Nombre personalizado actualmente no establecido</string>
-  <string name="show_carrier_title">Etiqueta de Operador</string>
+  <string name="custom_carrier_label_explain">Escribe el nuevo nombre. Deja en blanco para volver al nombre por defecto.</string>
+  <string name="custom_carrier_label_notset">Nombre personalizado no establecido</string>
+  <string name="show_carrier_title">Etiqueta del operador</string>
   <string name="show_carrier_disabled">Deshabilitado</string>
-  <string name="show_carrier_keyguard">Sólo en la pantalla de bloqueo</string>
-  <string name="show_carrier_statusbar">Sólo en la barra de estado</string>
+  <string name="show_carrier_keyguard">Solo en la pantalla de bloqueo</string>
+  <string name="show_carrier_statusbar">Solo en la barra de estado</string>
   <string name="show_carrier_both">Pantalla de bloqueo y barra de estado</string>
   <string name="show_carrier_enabled">Pantalla de bloqueo y barra de estado</string>
   <string name="status_bar_carrier_color">Color para el nombre del operador</string>
@@ -213,82 +213,82 @@
   <string name="carrier_label_number_of_notification_icons_title">Número máximo de iconos antes de ocultar</string>
   <string name="status_bar_font_style_title">Tipo de letra</string>
   <string name="status_bar_font_normal">Normal</string>
-  <string name="status_bar_font_italic">Italic</string>
+  <string name="status_bar_font_italic">Itálica</string>
   <string name="status_bar_font_bold">Negrita</string>
-  <string name="status_bar_font_bold_italic">Negrita Cursiva</string>
+  <string name="status_bar_font_bold_italic">Negrita cursiva</string>
   <string name="status_bar_font_light">Claro</string>
   <string name="status_bar_font_light_italic">Fina cursiva</string>
   <string name="status_bar_font_thin">Delgada</string>
-  <string name="status_bar_font_thin_italic">Delgada Cursiva</string>
-  <string name="status_bar_font_condensed">Condensed</string>
-  <string name="status_bar_font_condensed_italic">Condensed Cursiva</string>
-  <string name="status_bar_font_condensed_light">Condensed fina</string>
-  <string name="status_bar_font_condensed_light_italic">Condensed Fina Cursiva</string>
-  <string name="status_bar_font_condensed_bold">Condensed negrita</string>
-  <string name="status_bar_font_condensed_bold_italic">Negrita y cursiva condensada</string>
+  <string name="status_bar_font_thin_italic">Delgada cursiva</string>
+  <string name="status_bar_font_condensed">Condensada</string>
+  <string name="status_bar_font_condensed_italic">Condensada cursiva</string>
+  <string name="status_bar_font_condensed_light">Condensada fina</string>
+  <string name="status_bar_font_condensed_light_italic">Condensada fina cursiva</string>
+  <string name="status_bar_font_condensed_bold">Condensada negrita</string>
+  <string name="status_bar_font_condensed_bold_italic">Condensada negrita y cursiva</string>
   <string name="status_bar_font_medium">Normal</string>
-  <string name="status_bar_font_medium_italic">Normal Cursiva</string>
+  <string name="status_bar_font_medium_italic">Normal cursiva</string>
   <string name="status_bar_font_black">Negrita</string>
-  <string name="status_bar_font_black_italic">Negrita Cursiva</string>
+  <string name="status_bar_font_black_italic">Negrita cursiva</string>
   <string name="status_bar_font_dancingscript">DancingScript</string>
-  <string name="status_bar_font_dancingscript_bold">DancingScript Negrita</string>
+  <string name="status_bar_font_dancingscript_bold">DancingScript negrita</string>
   <string name="status_bar_font_comingsoon">Próximamente</string>
-  <string name="status_bar_font_notoserif">NotoSerif Normal</string>
-  <string name="status_bar_font_notoserif_italic">NotoSerif Cursiva</string>
-  <string name="status_bar_font_notoserif_bold">NotoSerif Negrita</string>
-  <string name="status_bar_font_notoserif_bold_italic">NotoSerif Negrita Cursiva</string>
+  <string name="status_bar_font_notoserif">NotoSerif normal</string>
+  <string name="status_bar_font_notoserif_italic">NotoSerif cursiva</string>
+  <string name="status_bar_font_notoserif_bold">NotoSerif negrita</string>
+  <string name="status_bar_font_notoserif_bold_italic">NotoSerif negrita cursiva</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Opciones de fuente</string>
-  <string name="lock_clock_font_summary">Cambiar la fuente predeterminada del widget de reloj de la pantalla de bloqueo</string>
+  <string name="lock_clock_font_summary">Cambiar la fuente predeterminada del widget de reloj en la pantalla de bloqueo</string>
   <string name="lockdate_font_size_title">Tamaño de la fuente de la fecha</string>
   <string name="lockclock_font_size_title">Tamaño de la fuente del reloj</string>
-  <string name="lock_date_font_summary">Personalizar fuente fecha</string>
+  <string name="lock_date_font_summary">Personalizar fuente de fecha</string>
   <string name="lock_date_font_title">Fecha</string>
-  <string name="lock_clock_font_dialog_title">Seleccione el tipo de letra del reloj de la pantalla de bloqueo</string>
+  <string name="lock_clock_font_dialog_title">Seleccione el tipo de letra del reloj en la pantalla de bloqueo</string>
   <string name="lock_clock_font_stock">Normal (por defecto)</string>
   <string name="lock_clock_font_bold">Negrita</string>
   <string name="lock_clock_font_light">Claro</string>
-  <string name="lock_clock_font_italic">Italic</string>
-  <string name="lock_clock_font_bold_italic">Negrita Cursiva</string>
+  <string name="lock_clock_font_italic">Itálica</string>
+  <string name="lock_clock_font_bold_italic">Negrita cursiva</string>
   <string name="lock_clock_font_light_italic">Fina cursiva</string>
-  <string name="lock_clock_font_thin_italic">Delgada Cursiva</string>
+  <string name="lock_clock_font_thin_italic">Delgada cursiva</string>
   <string name="lock_clock_font_thin">Delgada</string>
-  <string name="lock_clock_font_condensed_normal">Condensed</string>
-  <string name="lock_clock_font_condensed_italic">Condensed Cursiva</string>
-  <string name="lock_clock_font_condensed_bold">Condensed negrita</string>
-  <string name="lock_clock_font_condensed_bold_italic">Condensed Negrita Cursiva</string>
+  <string name="lock_clock_font_condensed_normal">Condensada</string>
+  <string name="lock_clock_font_condensed_italic">Condensada cursiva</string>
+  <string name="lock_clock_font_condensed_bold">Condensada negrita</string>
+  <string name="lock_clock_font_condensed_bold_italic">Condensada negrita cursiva</string>
   <string name="lock_clock_font_medium_normal">Normal</string>
-  <string name="lock_clock_font_medium_italic">Normal Cursiva</string>
+  <string name="lock_clock_font_medium_italic">Normal cursiva</string>
   <!-- Screen state service -->
   <string name="screen_state_toggles_title">Suspender acciones</string>
   <string name="screen_state_toggles_enable_title">Habilitar</string>
-  <string name="screen_state_toggles_enable_summary">Las acciones se ejecutarán al apagar la pantalla. Al encenderla, el estado anterior se restaurará.</string>
+  <string name="screen_state_toggles_enable_summary">Las acciones se ejecutarán al apagar la pantalla. Al encenderla, se restaurará el estado anterior.</string>
   <string name="screen_state_toggles_mobile_title">Redes móviles</string>
   <string name="screen_state_toggles_location_title">Ubicación</string>
   <string name="screen_state_toggles_twog">Cambiar a 2G</string>
-  <string name="screen_state_toggles_twog_summary">Modo de red se cambiará a 2G al apagar la pantalla</string>
+  <string name="screen_state_toggles_twog_summary">El modo de red se cambiará a 2G al apagar la pantalla</string>
   <string name="screen_state_toggles_gps">Desactivar GPS</string>
-  <string name="screen_state_toggles_gps_summary">Servicio de localización basado en GPS se desactivará al apagar la pantalla</string>
+  <string name="screen_state_toggles_gps_summary">El servicio de localización de GPS se desactivará al apagar la pantalla</string>
   <string name="screen_state_toggles_mobile_data">Desactivar los datos móviles</string>
-  <string name="screen_state_toggles_mobile_data_summary">Datos móviles se deshabilatarán al apagar la pantalla</string>
+  <string name="screen_state_toggles_mobile_data_summary">Los datos móviles se deshabilatarán al apagar la pantalla</string>
   <string name="screen_state_off_delay_title">Retardo de las acciones con la pantalla apagada</string>
-  <string name="screen_state_off_delay_summary">Número de segundos a esperar antes de realizar acciones después de apagar la pantalla</string>
+  <string name="screen_state_off_delay_summary">Segundos a esperar antes de realizar las acciones después de apagar la pantalla</string>
   <string name="screen_state_on_delay_title">Retardo de las acciones con la pantalla encendida</string>
-  <string name="screen_state_on_delay_summary">Número de segundos a esperar antes de realizar acciones después de apagar la pantalla</string>
+  <string name="screen_state_on_delay_summary">Segundos a esperar antes de realizar las acciones después de encender la pantalla</string>
   <!-- Fingerprint max failed attempts -->
   <string name="fp_max_failed_attempts">Número máximo de intentos de la huella digital</string>
-  <string name="fp_three_attempts">Español</string>
-  <string name="fp_five_attempts">Español</string>
-  <string name="fp_ten_attempts">Español</string>
-  <string name="fp_fifteen_attempts">Spanish</string>
+  <string name="fp_three_attempts">3 intentos</string>
+  <string name="fp_five_attempts">5 intentos</string>
+  <string name="fp_ten_attempts">10 intentos</string>
+  <string name="fp_fifteen_attempts">15 intentos</string>
   <!-- Lockscreen battery info indicator  -->
-  <string name="lockscreen_battery_info_title">Spanish</string>
-  <string name="lockscreen_battery_info_summary">Spanish</string>
+  <string name="lockscreen_battery_info_title">Información de carga</string>
+  <string name="lockscreen_battery_info_summary">Mostrar la corriente del cargador, el voltaje y la temperatura de la batería en la pantalla de bloqueo mientras se está cargando</string>
   <!-- Status bar - Battery saver color -->
-  <string name="status_bar_battery_saver_color_title">Color del ahorrador de batería</string>
-  <string name="status_bar_battery_saver_color_summary">Nota: Si el ahorrador de batería ya está habilitado, para que el nuevo color haga efecto, ¡vuelve a activar el ahorrador de batería!</string>
+  <string name="status_bar_battery_saver_color_title">Color del ahorro de batería</string>
+  <string name="status_bar_battery_saver_color_summary">Nota: Si el ahorro de batería ya está habilitado, para que el nuevo color sea efectivo, vuelve a activar el ahorror de batería</string>
   <!-- Reset battery stats -->
   <string name="ok">Aceptar</string>
   <string name="menu_stats_reset">Reiniciar estadísticas</string>
-  <string name="reset_stats_msg">Las estadísticas de la batería van a restablecerse</string>
+  <string name="reset_stats_msg">Las estadísticas de la batería se van a restablecer</string>
 </resources>
